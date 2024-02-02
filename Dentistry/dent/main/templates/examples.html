@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ======= Gallery Section ======= -->
+<section id="gallery" class="gallery">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Примеры работ</h2>
+    </div>
+
+    <div class="gallery-slider swiper">
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><a class="gallery-lightbox"
+            href="{% static 'main/assets/img/gallery/gallery-1.jpeg' %}"><img
+              src="{% static 'main/assets/img/gallery/gallery-1.jpeg' %}" class="img-fluid" alt=""></a></div>
+        <div class="swiper-slide"><a class="gallery-lightbox"
+            href="{% static 'main/assets/img/gallery/gallery-2.jpg' %}"><img
+              src="{% static 'main/assets/img/gallery/gallery-2.jpg' %}" class="img-fluid" alt=""></a></div>
+        <div class="swiper-slide"><a class="gallery-lightbox"
+            href="{% static 'main/assets/img/gallery/gallery-3.jpeg' %}"><img
+              src="{% static 'main/assets/img/gallery/gallery-3.jpeg' %}" class="img-fluid" alt=""></a></div>
+        <div class="swiper-slide"><a class="gallery-lightbox"
+            href="{% static 'main/assets/img/gallery/gallery-4.jpeg' %}"><img
+              src="{% static 'main/assets/img/gallery/gallery-4.jpeg' %}" class="img-fluid" alt=""></a></div>
+        <div class="swiper-slide"><a class="gallery-lightbox"
+            href="{% static 'main/assets/img/gallery/gallery-5.jpeg' %}"><img
+              src="{% static 'main/assets/img/gallery/gallery-5.jpeg' %}" class="img-fluid" alt=""></a></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section><!-- End Gallery Section -->
+
+{% endblock %}

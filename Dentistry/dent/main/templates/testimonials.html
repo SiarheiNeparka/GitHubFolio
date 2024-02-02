@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Отзывы</h2>
+    </div>
+
+    {% for testimonial in all_testimonials reversed %}
+    <div class="testimonial-item">
+      <p>
+        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+        {{testimonial.testimonial}}
+        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+      </p>
+      <h3>{{testimonial.name}}</h3>
+      <h4>{{testimonial.service}}</h4>
+    </div>
+    {% endfor %}
+
+  </div>
+</section><!-- End Testimonials Section -->
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Оставить отзыв</h2>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row mt-5">
+
+      <form method="post">
+        {% csrf_token %}
+        <div class="php-email-form">
+          <div class="form-group mt-3">
+            {{testimonial_form.name}}
+          </div>
+          <div class="form-group mt-3">
+            {{testimonial_form.service}}
+          </div>
+          <div class="form-group mt-3">
+            {{testimonial_form.testimonial}}
+          </div>
+          <div class="form-group mt-3">
+            <div class="text-center"><button type="submit">Отправить</button></div>
+          </div>
+        </div>
+    </div>
+    </form>
+
+  </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+{% endblock %}

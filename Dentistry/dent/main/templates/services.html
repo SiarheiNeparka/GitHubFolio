@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services services">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Услуги</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon"><img src="{% static 'main/assets/img/tooth1.png' %}"></div>
+        <h4 class="title">Терапия</h4>
+        <ul class="description" style="list-style-type: none; padding-left: 0;">
+          <li><i class="bx bx-chevron-right"></i> Эстетическая реставрация</li>
+          <li><i class="bx bx-chevron-right"></i> Профессиональная гигиена полости рта</li>
+          <li><i class="bx bx-chevron-right"></i> Отбеливание зубов</li>
+          <li><i class="bx bx-chevron-right"></i> Лечение осложнённого кариеса (пульпита, периодонтита)</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon"><img src="{% static 'main/assets/img/tooth2.png' %}"></div>
+        <h4 class="title">Хирургическое лечение и имплантация</h4>
+        <ul class="description" style="list-style-type: none; padding-left: 0;">
+          <li><i class="bx bx-chevron-right"></i> Удаление зубов</li>
+          <li><i class="bx bx-chevron-right"></i> Имплантация</li>
+          <li><i class="bx bx-chevron-right"></i> Синуслифтинг, направленная костная регенерация</li>
+          <li><i class="bx bx-chevron-right"></i> Костная и соединительнотканная аугментация</li>
+          <li><i class="bx bx-chevron-right"></i> Концепции all-o-4 / all-on-6</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon"><img src="{% static 'main/assets/img/tooth3.png' %}"></div>
+        <h4 class="title">Ортопедическое лечение</h4>
+        <ul class="description" style="list-style-type: none; padding-left: 0;">
+          <li><i class="bx bx-chevron-right"></i> Съёмное протезирование (бюгельные, пластиночные протезы, бабочки)</li>
+          <li><i class="bx bx-chevron-right"></i> Несъёмное протезирование (коронки, вкладки, виниры, мостовидные
+            протезы)</li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+{% endblock %}

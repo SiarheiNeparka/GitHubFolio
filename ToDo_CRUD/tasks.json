@@ -1,0 +1,54 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Read Byte of Python",
+      "priority": 1
+    },
+    {
+      "id": 2,
+      "name": "Do homework",
+      "priority": 1
+    },
+    {
+      "id": 3,
+      "name": "Play sports",
+      "priority": 2
+    },
+    {
+      "id": 4,
+      "name": "Go for a walk",
+      "priority": 2
+    },
+    {
+      "id": 5,
+      "name": "Wash the dishes",
+      "priority": 1
+    },
+    {
+      "id": 6,
+      "name": "Feed the cat",
+      "priority": 1
+    },
+    {
+      "id": 7,
+      "name": "Carwash",
+      "priority": 3
+    },
+    {
+      "id": 8,
+      "name": "Something",
+      "priority": 3
+    },
+    {
+      "id": 9,
+      "name": "Something more",
+      "priority": 3
+    },
+    {
+      "id": 10,
+      "name": "Something else",
+      "priority": 3
+    }
+  ]
+}
